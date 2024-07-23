@@ -1,0 +1,135 @@
+body{
+    background-color: rgb(0, 0, 0);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.square{
+     position: relative;
+     width: 400px;
+     height: 400px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.square span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#6b72ff00 50%,#000dff3b 40%);
+    box-shadow: 0 0 50px rgb(25, 0, 255), inset 0 0 50px rgb(25, 0, 255);
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+ transition: 0.5;
+ animation: animate1 6s linear infinite;
+}
+.square span:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#6b72ff00 50%,#000dff3b 40%);
+    box-shadow: 0 0 50px rgb(25, 0, 255), inset 0 0 50px rgb(25, 0, 255);
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+ transition: 0.5;
+ animation: animate2 4s linear infinite;
+}
+
+ 
+
+.square span:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#6b72ff00 50%,#000dff3b 40%);
+    box-shadow: 0 0 50px rgb(25, 0, 255), inset 0 0 50px rgb(25, 0, 255);
+    border-radius: 38% 62% 63% 37% / 41% 43% 56% 59%;
+ transition: 0.5;
+ animation: animate3 8s linear infinite;
+}
+
+@keyframes animate1 {
+    0{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2 {
+    0{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate3 {
+    0{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+*h5 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+bodyh5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200vh;
+    background: #000;
+}
+
+h5 {
+    position: relative;
+    margin: 0;
+    font-size: 3em;
+    font-weight: 800;
+    color: #21ba3d;
+    z-index: 1;
+   overflow: hidden;
+
+}
+
+h5::before {
+    content: '';
+    position: absolute;
+    
+    right: 120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 0%, #000 5%, #000 100%);
+    animation: animate 5.5s linear forwards;
+}
+
+@keyframes animate {
+    0% {
+        right: 150%
+    }
+
+    100% {
+        right: -120%
+    }
+}
+
+h5 span {
+    color:  #FF9F33 ;
+}
+h5 span2 {
+    color: #e23350;
+}
